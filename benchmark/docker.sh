@@ -8,5 +8,6 @@ docker run \
        -e HISTFILE=/aider/.bash_history \
        -e AIDER_DOCKER=1 \
        -e AIDER_BENCHMARK_DIR=/benchmarks \
+       --network="host" \
        aider-benchmark \
        bash
